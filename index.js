@@ -5,8 +5,7 @@ const Alexa = require('ask-sdk-core');
 const ACTIONS = [
     'rock',
     'Paper',
-    'scissors',
-    'lizard'
+    'scissors'
     ];
 const LaunchRequestHandler = {
     canHandle(handlerInput) {
