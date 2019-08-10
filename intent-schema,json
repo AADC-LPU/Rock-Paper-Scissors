@@ -42,11 +42,6 @@
                     "values": [
                         {
                             "name": {
-                                "value": "lizard"
-                            }
-                        },
-                        {
-                            "name": {
                                 "value": "scissors",
                                 "synonyms": [
                                     "scissor"
