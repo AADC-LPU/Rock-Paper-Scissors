@@ -1,0 +1,78 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "rock paper scissors",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GameIntent",
+                    "slots": [
+                        {
+                            "name": "action",
+                            "type": "actiontype"
+                        }
+                    ],
+                    "samples": [
+                        "i am {action}",
+                        "use {action}",
+                        "i use {action}",
+                        "i want to use {action}",
+                        "{action}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "actiontype",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "lizard"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "scissors",
+                                "synonyms": [
+                                    "scissor"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "paper ",
+                                "synonyms": [
+                                    "book",
+                                    "newspaper"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "rock",
+                                "synonyms": [
+                                    "pebble"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
