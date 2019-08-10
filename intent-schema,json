@@ -16,52 +16,44 @@
                     "samples": []
                 },
                 {
-                    "name": "AMAZON.NavigateHomeIntent",
-                    "samples": []
-                },
-                {
-                    "name": "GameIntent",
+                    "name": "gameIntent",
                     "slots": [
                         {
-                            "name": "action",
-                            "type": "actiontype"
+                            "name": "actionn",
+                            "type": "actiongame"
                         }
                     ],
                     "samples": [
-                        "i am {action}",
-                        "use {action}",
-                        "i use {action}",
-                        "i want to use {action}",
-                        "{action}"
+                        "{actionn}"
                     ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
                 }
             ],
             "types": [
                 {
-                    "name": "actiontype",
+                    "name": "actiongame",
                     "values": [
+                        {
+                            "name": {
+                                "value": "rock"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "paper",
+                                "synonyms": [
+                                    "papers"
+                                ]
+                            }
+                        },
                         {
                             "name": {
                                 "value": "scissors",
                                 "synonyms": [
                                     "scissor"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "paper ",
-                                "synonyms": [
-                                    "book",
-                                    "newspaper"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "rock",
-                                "synonyms": [
-                                    "pebble"
                                 ]
                             }
                         }
